@@ -19,11 +19,17 @@ header {
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .headertitulo {
     display: flex;
     align-items: center;
+}
+
+.headertitulo a {
+    color: white;
+    text-decoration: none;
 }
 
 .headertitulo img {
@@ -441,7 +447,6 @@ footer {
         font-style: italic;
         display: flex;
         justify-content: space-between;
-        position: fixed;
         width: 100%;
 
     }
@@ -456,10 +461,6 @@ footer {
         justify-content: center;
         flex-direction: row;
         align-content: space-between;
-    }
-
-    .portada2 {
-        margin-top: 40px;
     }
 
     .parrafos {
@@ -533,7 +534,6 @@ footer {
         background-color: black;
         font-style: italic;
         display: flex;
-        position: fixed;
     }
 
     footer {
@@ -605,6 +605,17 @@ footer {
         width: 260px;
         flex-direction: column;
         justify-content: center;
+    }
+    .gridcontainer {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo"
+            "article1  article2"
+            "article3 article4"
+            "article5 article6";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 2fr;
+        gap: 20px;
     }
 }
 
@@ -752,6 +763,7 @@ footer {
     .contactodatos {
 
         font-size: 20px;
+        max-width: 90%;
     }
 
     .botoncontainer {
@@ -783,6 +795,7 @@ footer {
         align-items: center;
         padding-top: 45px;
         font-size: 16px;
+        padding: 0;
     }
 
     .container-faq .title-faq {
@@ -794,8 +807,7 @@ footer {
     .item-faq {
         margin: 10px 0;
         border: 1px solid #ccc;
-        padding: 10px;
-        box-sizing: border-box;
+        padding: 3px;
     }
 
     .pregunta {
