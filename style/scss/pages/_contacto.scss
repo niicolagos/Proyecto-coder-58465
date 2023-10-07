@@ -1,0 +1,49 @@
+//Contacto
+.fondo4 {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.247),
+      rgba(255, 255, 255, 0.247)
+    ),
+    url(../img/gimnasio.jpg) no-repeat center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  padding: 300px;
+  background-attachment: fixed;
+  h2 {
+    height: 30vh;
+    font-size: 50px;
+  }
+  .contactodatos {
+    display: grid;
+    grid-template-areas:
+      "gridcontacto1"
+      "gridcontacto2"
+      "gridcontacto3"
+      "gridcontacto4"
+      "gridcontacto5"
+      "gridcontacto6";
+    grid-template-columns: 1fr;
+    font-size: 30px;
+    gap: 20px;
+    font-size: 24px;
+  }
+  .botoncontainer {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    .boton-enviar,
+    .boton-limpiar {
+      padding: 10px 20px;
+      background-color: #0077b5;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      &:hover{
+        background-color: #00558c;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+//Nosotros
+
+.fondo1 {
+  background: linear-gradient(#8f8f8f, rgba(255, 255, 255, 0.247)),
+    url(../img/151_hypertrophy-training-division.webp) no-repeat center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  background-attachment: fixed;
+  .portada2 {
+    display: flex;
+    text-align: center;
+    padding: 60px 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
+    div h2 {
+      font-family: ui-sans-serif;
+      display: flex;
+      height: 250px;
+    }
+    .datos {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      list-style-type: none;
+    }
+    .parrafos {
+      display: flex;
+      font-size: large;
+      width: 50%;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .ubicacion {
+      display: flex;
+      justify-content: flex-end;
+      h3 {
+        display: flex;
+        height: 20vh;
+        width: 35%;
+        flex-direction: row;
+        font-family: serif;
+      }
+    }
+  }
+}

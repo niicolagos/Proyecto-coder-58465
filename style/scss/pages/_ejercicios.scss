@@ -1,0 +1,87 @@
+//Ejercicios
+
+.fondo3 {
+  background: linear-gradient(#ff7575, rgba(255, 255, 255, 0.247)),
+    url(../img/training.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-attachment: fixed;
+  .gridcontainer {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo titulo"
+      "article1  article2  article3"
+      "article4  article5 article6";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 2fr 2fr;
+    gap: 20px;
+    .titulo3 {
+      grid-area: titulo;
+      font-size: 45px;
+      font-weight: 800;
+    }
+    .article1 {
+      grid-area: article1;
+      justify-content: center;
+      justify-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .article2 {
+      grid-area: article2;
+      justify-content: center;
+      justify-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .article3 {
+      grid-area: article3;
+      justify-content: center;
+      justify-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .article4 {
+      grid-area: article4;
+      justify-content: center;
+      justify-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .article5 {
+      grid-area: article5;
+      justify-content: center;
+      justify-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .article6 {
+      grid-area: article6;
+      justify-content: center;
+      justify-items: center;
+      height: 100%;
+      width: 100%;
+    }
+    article h3 {
+      padding-bottom: 20px;
+      font-size: 40px;
+      font-family: auto;
+      text-shadow: 0 5px 5px red;
+    }
+    article iframe {
+      height: 50vh;
+      width: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}

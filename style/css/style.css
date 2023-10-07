@@ -1,6 +1,5 @@
-@charset "UTF-8";
 * {
-  margin: 0;
+  margin: 10;
   padding: 0;
   box-sizing: border-box;
 }
@@ -80,27 +79,8 @@ footer #footerleft .redes {
   text-decoration: none;
   padding: 0px;
 }
-
-/*îndex*/
-.portada {
-  height: 80vh;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.portada h2 {
-  text-align: center;
-  font-size: 70px;
-  font-weight: 800;
-}
-
-.portada h3 {
-  font-size: 35px;
-  text-align: center;
+footer #footerleft .redes .imag {
+  width: 25px;
 }
 
 .fondo {
@@ -111,8 +91,25 @@ footer #footerleft .redes {
   padding: 200px;
   background-attachment: fixed;
 }
-
-.boton {
+.fondo .portada {
+  height: 80vh;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.fondo .portada h2 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 800;
+}
+.fondo .portada h3 {
+  font-size: 35px;
+  text-align: center;
+}
+.fondo .portada a {
   border-radius: 20px;
   text-decoration: none;
   color: white;
@@ -121,11 +118,6 @@ footer #footerleft .redes {
   font-size: 16px;
 }
 
-.imag {
-  width: 25px;
-}
-
-/* nosotros style */
 .fondo1 {
   background: linear-gradient(#8f8f8f, rgba(255, 255, 255, 0.247)), url(../img/151_hypertrophy-training-division.webp) no-repeat center;
   background-size: cover;
@@ -133,8 +125,7 @@ footer #footerleft .redes {
   height: auto;
   background-attachment: fixed;
 }
-
-.portada2 {
+.fondo1 .portada2 {
   display: flex;
   text-align: center;
   padding: 60px 10px;
@@ -142,37 +133,30 @@ footer #footerleft .redes {
   flex-direction: column;
   flex-wrap: wrap;
 }
-
-.datos {
+.fondo1 .portada2 div h2 {
+  font-family: ui-sans-serif;
+  display: flex;
+  height: 250px;
+}
+.fondo1 .portada2 .datos {
   display: flex;
   width: 100%;
   flex-direction: column;
   flex-wrap: wrap;
   list-style-type: none;
 }
-
-.datos p {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  align-items: center;
-}
-
-.portada2 div h2 {
-  font-family: ui-sans-serif;
-  display: flex;
-  height: 250px;
-}
-
-.parrafos {
+.fondo1 .portada2 .parrafos {
   display: flex;
   font-size: large;
   width: 50%;
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-.ubicacion h3 {
+.fondo1 .portada2 .ubicacion {
+  display: flex;
+  justify-content: flex-end;
+}
+.fondo1 .portada2 .ubicacion h3 {
   display: flex;
   height: 20vh;
   width: 35%;
@@ -180,12 +164,6 @@ footer #footerleft .redes {
   font-family: serif;
 }
 
-.ubicacion {
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* faq style */
 .fondo2 {
   background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/motivacion-gym.jpg) no-repeat center;
   background-size: cover;
@@ -195,30 +173,25 @@ footer #footerleft .redes {
   padding: 200px;
   background-attachment: fixed;
 }
-
-.container {
+.fondo2 .container {
   width: 90%;
   margin: 100px auto;
 }
-
-.container-faq {
+.fondo2 .container .container-faq {
   box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
-
-.container-faq .title-faq {
+.fondo2 .container .container-faq .title-faq {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
 }
-
-.container-faq .item-faq {
+.fondo2 .container .container-faq .item-faq {
   box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
   border-radius: 10px;
 }
-
-.container-faq .pregunta {
+.fondo2 .container .container-faq .pregunta {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -227,8 +200,14 @@ footer #footerleft .redes {
   padding: 20px 20px 20px 80px;
   transition: 0.4s;
 }
-
-.container-faq .pregunta .more {
+.fondo2 .container .container-faq .pregunta span {
+  position: absolute;
+  left: 10px;
+  font-size: 3rem;
+  top: 10px;
+  opacity: 0.1;
+}
+.fondo2 .container .container-faq .pregunta .more {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -239,20 +218,10 @@ footer #footerleft .redes {
   cursor: pointer;
   transition: 0.4s;
 }
-
-.container-faq .pregunta .more:hover {
+.fondo2 .container .container-faq .pregunta .more:hover {
   box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.4);
 }
-
-.container-faq .pregunta span {
-  position: absolute;
-  left: 10px;
-  font-size: 3rem;
-  top: 10px;
-  opacity: 0.1;
-}
-
-.container-faq .respuesta {
+.fondo2 .container .container-faq .respuesta {
   position: relative;
   padding: 0 20px 20px 80px;
   overflow: hidden;
@@ -262,12 +231,10 @@ footer #footerleft .redes {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.container-faq .respuesta p {
+.fondo2 .container .container-faq .respuesta p {
   font-size: 1.3rem;
 }
-
-.container-faq .respuesta span {
+.fondo2 .container .container-faq .respuesta span {
   position: absolute;
   left: 10px;
   font-size: 3rem;
@@ -275,7 +242,6 @@ footer #footerleft .redes {
   opacity: 0.1;
 }
 
-/* ejercicios style */
 .fondo3 {
   background: linear-gradient(#ff7575, rgba(255, 255, 255, 0.247)), url(../img/training.jpg) no-repeat center;
   background-size: cover;
@@ -286,84 +252,73 @@ footer #footerleft .redes {
   padding-top: 200px;
   background-attachment: fixed;
 }
-
-.gridcontainer {
+.fondo3 .gridcontainer {
   display: grid;
   grid-template-areas: "titulo titulo titulo" "article1  article2  article3" "article4  article5 article6";
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 250px 2fr 2fr;
   gap: 20px;
 }
-
-.titulo3 {
+.fondo3 .gridcontainer .titulo3 {
   grid-area: titulo;
   font-size: 45px;
   font-weight: 800;
 }
-
-.article1 {
+.fondo3 .gridcontainer .article1 {
   grid-area: article1;
   justify-content: center;
   justify-items: center;
   height: 100%;
   width: 100%;
 }
-
-.article2 {
+.fondo3 .gridcontainer .article2 {
   grid-area: article2;
   justify-content: center;
   justify-items: center;
   height: 100%;
   width: 100%;
 }
-
-.article3 {
+.fondo3 .gridcontainer .article3 {
   grid-area: article3;
   justify-content: center;
   justify-items: center;
   height: 100%;
   width: 100%;
 }
-
-.article4 {
+.fondo3 .gridcontainer .article4 {
   grid-area: article4;
   justify-content: center;
   justify-items: center;
   height: 100%;
   width: 100%;
 }
-
-.article5 {
+.fondo3 .gridcontainer .article5 {
   grid-area: article5;
   justify-content: center;
   justify-items: center;
   height: 100%;
   width: 100%;
 }
-
-.article6 {
+.fondo3 .gridcontainer .article6 {
   grid-area: article6;
   justify-content: center;
   justify-items: center;
   height: 100%;
   width: 100%;
 }
-
-.gridcontainer article h3 {
+.fondo3 .gridcontainer article h3 {
   padding-bottom: 20px;
   font-size: 40px;
   font-family: auto;
   text-shadow: 0 5px 5px red;
 }
-
-.gridcontainer article iframe {
+.fondo3 .gridcontainer article iframe {
   height: 50vh;
   width: 100%;
   padding-left: 5px;
   padding-right: 5px;
 }
 
-/* contacto style*/
 .fondo4 {
   background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/gimnasio.jpg) no-repeat center;
   background-size: cover;
@@ -372,8 +327,11 @@ footer #footerleft .redes {
   padding: 300px;
   background-attachment: fixed;
 }
-
-.contactodatos {
+.fondo4 h2 {
+  height: 30vh;
+  font-size: 50px;
+}
+.fondo4 .contactodatos {
   display: grid;
   grid-template-areas: "gridcontacto1" "gridcontacto2" "gridcontacto3" "gridcontacto4" "gridcontacto5" "gridcontacto6";
   grid-template-columns: 1fr;
@@ -381,20 +339,13 @@ footer #footerleft .redes {
   gap: 20px;
   font-size: 24px;
 }
-
-.fondo4 h2 {
-  height: 30vh;
-  font-size: 50px;
-}
-
-.botoncontainer {
+.fondo4 .botoncontainer {
   display: flex;
   gap: 10px;
   font-size: 20px;
 }
-
-.boton-enviar,
-.boton-limpiar {
+.fondo4 .botoncontainer .boton-enviar,
+.fondo4 .botoncontainer .boton-limpiar {
   padding: 10px 20px;
   background-color: #0077b5;
   color: #fff;
@@ -403,12 +354,8 @@ footer #footerleft .redes {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-.boton-enviar:hover {
-  background-color: #00558c;
-}
-
-.boton-limpiar:hover {
+.fondo4 .botoncontainer .boton-enviar:hover,
+.fondo4 .botoncontainer .boton-limpiar:hover {
   background-color: #00558c;
 }
 
