@@ -1,0 +1,38 @@
+//Header
+header {
+  color: white;
+  background-color: black;
+  font-style: italic;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+  .headertitulo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 92px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    li {
+      margin: 0 30px;
+      a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}

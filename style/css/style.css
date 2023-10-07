@@ -1,0 +1,728 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  color: white;
+  background-color: black;
+  font-style: italic;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+header .headertitulo {
+  display: flex;
+  align-items: center;
+}
+header .headertitulo img {
+  width: 92px;
+}
+header .headertitulo a {
+  color: white;
+  text-decoration: none;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+header nav ul li {
+  margin: 0 30px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: grey;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+footer #footerleft {
+  color: white;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+footer #footerleft .redes {
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0px;
+}
+
+/*îndex*/
+.portada {
+  height: 80vh;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.portada h2 {
+  text-align: center;
+  font-size: 70px;
+  font-weight: 800;
+}
+
+.portada h3 {
+  font-size: 35px;
+  text-align: center;
+}
+
+.fondo {
+  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/pesas.jpg) no-repeat center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  padding: 200px;
+  background-attachment: fixed;
+}
+
+.boton {
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.imag {
+  width: 25px;
+}
+
+/* nosotros style */
+.fondo1 {
+  background: linear-gradient(#8f8f8f, rgba(255, 255, 255, 0.247)), url(../img/151_hypertrophy-training-division.webp) no-repeat center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  background-attachment: fixed;
+}
+
+.portada2 {
+  display: flex;
+  text-align: center;
+  padding: 60px 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.datos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.datos p {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portada2 div h2 {
+  font-family: ui-sans-serif;
+  display: flex;
+  height: 250px;
+}
+
+.parrafos {
+  display: flex;
+  font-size: large;
+  width: 50%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ubicacion h3 {
+  display: flex;
+  height: 20vh;
+  width: 35%;
+  flex-direction: row;
+  font-family: serif;
+}
+
+.ubicacion {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* faq style */
+.fondo2 {
+  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/motivacion-gym.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 200px;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  margin: 100px auto;
+}
+
+.container-faq {
+  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.container-faq .title-faq {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.container-faq .item-faq {
+  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.container-faq .pregunta {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(43, 51, 122, 0.2);
+  padding: 20px 20px 20px 80px;
+  transition: 0.4s;
+}
+
+.container-faq .pregunta .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.container-faq .pregunta .more:hover {
+  box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.4);
+}
+
+.container-faq .pregunta span {
+  position: absolute;
+  left: 10px;
+  font-size: 3rem;
+  top: 10px;
+  opacity: 0.1;
+}
+
+.container-faq .respuesta {
+  position: relative;
+  padding: 0 20px 20px 80px;
+  overflow: hidden;
+  /*height: 0; la idea es con javascript hacer click en el + y que te salga la respuesta*/
+  transition: 0.4s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-faq .respuesta p {
+  font-size: 1.3rem;
+}
+
+.container-faq .respuesta span {
+  position: absolute;
+  left: 10px;
+  font-size: 3rem;
+  top: -10px;
+  opacity: 0.1;
+}
+
+/* ejercicios style */
+.fondo3 {
+  background: linear-gradient(#ff7575, rgba(255, 255, 255, 0.247)), url(../img/training.jpg) no-repeat center;
+  background-size: cover;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  background-attachment: fixed;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-areas: "titulo titulo titulo" "article1  article2  article3" "article4  article5 article6";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 2fr 2fr;
+  gap: 20px;
+}
+
+.titulo3 {
+  grid-area: titulo;
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.article1 {
+  grid-area: article1;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.article2 {
+  grid-area: article2;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.article3 {
+  grid-area: article3;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.article4 {
+  grid-area: article4;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.article5 {
+  grid-area: article5;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.article6 {
+  grid-area: article6;
+  justify-content: center;
+  justify-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.gridcontainer article h3 {
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-family: auto;
+  text-shadow: 0 5px 5px red;
+}
+
+.gridcontainer article iframe {
+  height: 50vh;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* contacto style*/
+.fondo4 {
+  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/gimnasio.jpg) no-repeat center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  padding: 300px;
+  background-attachment: fixed;
+}
+
+.contactodatos {
+  display: grid;
+  grid-template-areas: "gridcontacto1" "gridcontacto2" "gridcontacto3" "gridcontacto4" "gridcontacto5" "gridcontacto6";
+  grid-template-columns: 1fr;
+  font-size: 30px;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.fondo4 h2 {
+  height: 30vh;
+  font-size: 50px;
+}
+
+.botoncontainer {
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.boton-enviar,
+.boton-limpiar {
+  padding: 10px 20px;
+  background-color: #0077b5;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar:hover {
+  background-color: #00558c;
+}
+
+.boton-limpiar:hover {
+  background-color: #00558c;
+}
+
+/* TABLET : Hasta 1024px */
+@media screen and (max-width: 1024px) {
+  header {
+    color: white;
+    background-color: black;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav-item {
+    margin: 0px;
+  }
+  .portada {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+  }
+  .parrafos {
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    font-size: large;
+    align-content: space-around;
+    flex-wrap: wrap;
+  }
+  .datos {
+    display: flex;
+    flex-direction: column;
+  }
+  .datos p {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .ubicacion {
+    display: flex;
+    justify-content: center;
+  }
+  .ubicacion h3 {
+    width: 50%;
+  }
+  .fondo2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/motivacion-gym.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 10px;
+    background-attachment: fixed;
+  }
+  footer {
+    background-color: black;
+    display: flex;
+    padding: 35px 2px;
+  }
+  #footerleft {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #footerleft h4 {
+    font-size: 1.2rem;
+  }
+  .container {
+    margin: 100px auto;
+    width: 100%;
+  }
+}
+/* TABLET : HaSTA 768px */
+@media screen and (max-width: 768px) {
+  header {
+    color: white;
+    background-color: black;
+    font-style: italic;
+    display: flex;
+  }
+  footer {
+    background-color: black;
+    display: flex;
+    padding: 35px 2px;
+    justify-content: space-between;
+  }
+  .footerleft {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .copy {
+    width: 100%;
+  }
+  .portada2 div h2 {
+    width: 100%;
+  }
+  .portada2 div h3 {
+    width: 100%;
+  }
+  .parrafos {
+    display: flex;
+    margin-top: 45px;
+    font-size: large;
+    flex-wrap: wrap;
+  }
+  .fondo {
+    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/pesas.jpg) no-repeat center;
+    background-size: cover;
+    padding: 171px;
+  }
+  .fondo2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/motivacion-gym.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+    background-attachment: fixed;
+  }
+  .container-faq .title-faq {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .fondo4 {
+    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../img/gimnasio.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+  .fondo4 h2 {
+    display: flex;
+    height: 45vh;
+    font-size: 44px;
+    width: 260px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .gridcontainer {
+    display: grid;
+    grid-template-areas: "titulo titulo" "article1  article2" "article3 article4" "article5 article6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 2fr;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    text-align: center;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  .headernav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .fondo {
+    padding: 160px;
+  }
+  .portada h2 {
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 85px;
+  }
+  .portada h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .boton {
+    display: block;
+    margin: 10px auto;
+  }
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footerleft {
+    margin-bottom: 20px;
+  }
+  .portada2 {
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .portada2 div h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .datos li {
+    padding: 3px;
+  }
+  .parrafos {
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 800;
+    height: 64vh;
+  }
+  .parrafos p {
+    margin-bottom: 8px;
+  }
+  .portada2 div h3 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .portada2 div iframe {
+    width: 100%;
+  }
+  /*Ejercicios */
+  .gridcontainer {
+    grid-template-areas: "titulo" "article1" "article2" "article3" "article4" "article5" "article6";
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+  }
+  .article {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  .article {
+    width: 100%;
+    font-size: 16px;
+  }
+  .titulo3 {
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fondo3 {
+    background: linear-gradient(#ff7575, rgba(255, 255, 255, 0.247)), url(../img/ilustracion-de-las-campanas-de-gimnasia-cruzadas-en-estilo-monocromo-vintage-elemento-de-diseno-para-logotipo-etiqueta-signo-emblema-poster-ilustracion-vectorial-2jcc8ph.jpg) no-repeat center;
+    background-size: contain;
+    padding-bottom: 200px;
+    padding-top: 200px;
+    background-attachment: fixed;
+  }
+  /* Contacto */
+  .fondo4 {
+    padding: 20px;
+    text-align: center;
+  }
+  .fondo4 h2 {
+    font-size: 35px;
+    height: 55vh;
+  }
+  .contactodatos {
+    font-size: 20px;
+    max-width: 90%;
+  }
+  .botoncontainer {
+    font-size: 15px;
+  }
+  input[type=text],
+  input[type=number],
+  input[type=email],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  /* Faq */
+  .fondo2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  .container-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    font-size: 16px;
+    padding: 0;
+  }
+  .container-faq .title-faq {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    margin-top: 25px;
+  }
+  .item-faq {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 3px;
+  }
+  .pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  .respuesta {
+    display: none;
+  }
+  .respuesta {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
