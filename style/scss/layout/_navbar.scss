@@ -11,3 +11,20 @@
     color: grey;
   }
 }
+
+@import "../utils/mixins";
+
+//Portatil max width 1024px
+@include portatil{
+.nav-item {
+  margin: 0px;
+}
+}
+
+//Mobile max width 320px
+nav {
+  @include mobile {
+    text-align: center;
+    margin-top: 20px;
+  }
+}

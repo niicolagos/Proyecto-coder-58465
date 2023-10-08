@@ -1,11 +1,10 @@
 //Faq
-
 .fondo2 {
   background: linear-gradient(
       rgba(255, 255, 255, 0.247),
       rgba(255, 255, 255, 0.247)
     ),
-    url(../img/motivacion-gym.jpg) no-repeat center;
+    url(../../../img/motivacion-gym.jpg) no-repeat center;
   background-size: cover;
   text-align: center;
   width: auto;
@@ -76,6 +75,80 @@
           font-size: 3rem;
           top: -10px;
           opacity: 0.1;
+        }
+      }
+    }
+  }
+}
+
+@import "../utils/mixins";
+//Portatil max width 1024px
+@include portatil {
+  .fondo2 {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.247),
+        rgba(255, 255, 255, 0.247)
+      ),
+      url(../img/motivacion-gym.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 10px;
+    background-attachment: fixed;
+    .container {
+      margin: 100px auto;
+      width: 100%;
+    }
+  }
+}
+
+//Tablet max width 768px
+@include tablet {
+  .fondo2 {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.247),
+        rgba(255, 255, 255, 0.247)
+      ),
+      url(../img/motivacion-gym.jpg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 100px;
+    background-attachment: fixed;
+    .container-faq .title-faq {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+  }
+}
+//Mobile max width 320px
+@include mobile {
+  .fondo2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    .container-faq {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 45px;
+      font-size: 16px;
+      padding: 0;
+      .title-faq {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        margin-top: 25px;
+      }
+      .item-faq {
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        padding: 3px;
+        .pregunta {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+        }
+        .respuesta {
+          display: none;
         }
       }
     }

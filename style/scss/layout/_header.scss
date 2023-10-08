@@ -36,3 +36,34 @@ header {
     }
   }
 }
+@import "../utils/mixins";
+//Portatil max width 1024px
+@include portatil {
+  header {
+    color: white;
+    background-color: black;
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+//Tablet max width 768px
+@include tablet {
+  header {
+    color: white;
+    background-color: black;
+    font-style: italic;
+    display: flex;
+  }
+}
+
+//Mobile max width 320px
+@include mobile {
+  header {
+    text-align: center;
+    h1 {
+      font-size: 20px;
+    }
+  }
+}

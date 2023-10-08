@@ -25,3 +25,52 @@ footer {
     }
   }
 }
+
+@import "../utils/mixins";
+//Portatil max width 1024px
+@include portatil {
+  footer {
+    background-color: black;
+    display: flex;
+    padding: 35px 2px;
+    #footerleft {
+      color: white;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      #footerleft h4 {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+//Tablet max width 768px
+@include tablet {
+  footer {
+    background-color: black;
+    display: flex;
+    padding: 35px 2px;
+    justify-content: space-between;
+    .footerleft {
+      color: white;
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      .copy {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//Mobile max width 320px
+@include mobile {
+  footer {
+    flex-direction: column;
+    text-align: center;
+    .footerleft {
+      margin-bottom: 20px;
+    }
+  }
+}
