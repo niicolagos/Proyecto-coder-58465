@@ -1,4 +1,6 @@
 //Nosotros
+
+@import "../utils/mixins";
 .fondo1 {
   background: linear-gradient(#8f8f8f, rgba(255, 255, 255, 0.247)),
     url(../../../img/151_hypertrophy-training-division.webp) no-repeat center;
@@ -7,12 +9,10 @@
   height: auto;
   background-attachment: fixed;
   .portada2 {
-    display: flex;
+    @include caja-flex(center,stretch,wrap);
+    flex-direction: column;
     text-align: center;
     padding: 60px 10px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    flex-wrap: wrap;
     div h2 {
       font-family: ui-sans-serif;
       display: flex;

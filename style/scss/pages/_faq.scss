@@ -1,4 +1,6 @@
 //Faq
+
+@import "../utils/mixins";
 .fondo2 {
   background: linear-gradient(
       rgba(255, 255, 255, 0.247),
@@ -28,10 +30,8 @@
         border-radius: 10px;
       }
       .pregunta {
+        @include caja-flex(space-between,center,nowrap);
         position: relative;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         background: rgba(43, 51, 122, 0.2);
         padding: 20px 20px 20px 80px;
         transition: 0.4s;
@@ -43,9 +43,7 @@
           opacity: 0.1;
         }
         .more {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include caja-flex(center,center,nowrap);
           box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
           width: 40px;
           height: 40px;
@@ -58,14 +56,12 @@
         }
       }
       .respuesta {
+        @include caja-flex(center,center,wrap);
         position: relative;
         padding: 0 20px 20px 80px;
         overflow: hidden;
         /*height: 0; la idea es con javascript hacer click en el + y que te salga la respuesta*/
         transition: 0.4s;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         p {
           font-size: 1.3rem;
         }

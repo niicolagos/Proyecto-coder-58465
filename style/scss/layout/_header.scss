@@ -1,12 +1,12 @@
 //Header
+
+@import "../utils/mixins";
 header {
+  @include caja-flex(space-between,center,nowrap);
   color: $colorprimario;
   background-color: $colorfondo;
   font-style: italic;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -23,10 +23,8 @@ header {
     }
   }
   nav ul {
+    @include caja-flex(space-evenly,center,wrap);
     list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     li {
       margin: 0 30px;
       a {

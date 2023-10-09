@@ -1,21 +1,16 @@
 //Footer
+@import "../utils/mixins";
 footer {
+  @include caja-flex(space-between, center, nowrap);
   background-color: $colorfondo;
-  display: flex;
-  justify-content: space-between;
   #footerleft {
+    @include caja-flex(space-evenly,center,wrap);
     color: $colorprimario;
-    display: flex;
     width: 100%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     flex-direction: column;
-    align-items: center;
     .redes {
+      @include caja-flex(space-around,center,wrap);
       width: 25%;
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
       list-style-type: none;
       text-decoration: none;
       padding: 0px;
