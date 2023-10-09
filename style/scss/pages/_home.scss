@@ -1,7 +1,3 @@
-//Variables
-$colorprimario: white;
-$colorfondo: black;
-
 //Inicio
 .fondo {
   background: linear-gradient(
@@ -40,50 +36,5 @@ $colorfondo: black;
       padding: 8px;
       font-size: 16px;
     }
-  }
-}
-
-@import "../utils/mixins";
-//Portatil max width 1024px
-@include portatil {
-  .portada {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: space-between;
-  }
-}
-//Tablet max width 768px
-
-@include tablet{
-  .fondo {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.247),
-        rgba(255, 255, 255, 0.247)
-      ),
-      url(../img/pesas.jpg) no-repeat center;
-    background-size: cover;
-    padding: 171px;
-  }
-}
-
-//Mobile max width 320px
-@include mobile{
-  .fondo {
-    padding: 160px;
-    .portada h2 {
-      font-size: 35px;
-      font-weight: 800;
-      padding-top: 85px;
-    }
-    .portada h3 {
-      font-size: 30px;
-      text-align: center;
-    }
-  }
-  .boton {
-    display: block;
-    margin: 10px auto;
   }
 }

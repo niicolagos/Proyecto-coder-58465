@@ -4,6 +4,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+//Utils variables
+@import "./utils/variables";
 //Layout header
 @import "./layout/header";
 //Layout navbar
@@ -22,8 +24,5 @@ body {
 @import "./pages/contacto";
 //Utils mixins
 @import "./utils/mixins";
-body{
-    @include mobile{
-        font-size: 14px;
-    }
-}
+//Components Medios
+@import "./components/medios";
