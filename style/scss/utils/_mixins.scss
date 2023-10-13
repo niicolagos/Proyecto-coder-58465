@@ -1,19 +1,23 @@
+//Mixins
 @mixin caja-flex($ejeprincipal, $ejecruzado, $wrap) {
   display: flex;
   justify-content: $ejeprincipal;
   align-items: $ejecruzado;
   flex-wrap: $wrap;
 }
+//Media querie para portatil 1024px
 @mixin portatil {
   @media screen and (max-width: 1024px) {
     @content;
   }
 }
+//Media querie para tablet 768px
 @mixin tablet {
   @media screen and (max-width: 768px) {
     @content;
   }
 }
+//Media querie para mobile 320px
 @mixin mobile {
   @media screen and (max-width: 320px) {
     @content;

@@ -3,15 +3,18 @@
 footer {
   @include caja-flex(space-between, center, nowrap);
   background-color: $colorfondo;
+  //Portatil footer
   @include portatil {
     background-color: black;
     display: flex;
     padding: 35px 2px;
   }
+  //Tablet footer
   @include tablet {
     display: flex;
     justify-content: space-between;
   }
+  //Mobile footer
   @include mobile {
     flex-direction: column;
     text-align: center;
@@ -32,6 +35,7 @@ footer {
       width: 25px;
     }
   }
+  //Portatil class footerleft
   @include portatil {
     color: white;
     display: flex;
@@ -41,12 +45,14 @@ footer {
       font-size: 1.2rem;
     }
   }
+  //Tablet class footerleft
   @include tablet {
     display: flex;
     .copy {
       width: 100%;
     }
   }
+  //Mobile class footerleft
   @include mobile {
     body {
       font-size: 14px;

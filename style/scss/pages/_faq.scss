@@ -75,18 +75,21 @@
       }
     }
   }
+  //Portatil faq
   @include portatil {
     padding-bottom: 10px;
     .container {
       width: 100%;
     }
   }
+  //Tablet faq
   @include tablet {
     padding: 10px;
     .container-faq .title-faq {
       font-size: 2rem;
     }
   }
+  //Mobile faq
   @include mobile {
     background-color: #f0f0f0;
     padding: 20px;

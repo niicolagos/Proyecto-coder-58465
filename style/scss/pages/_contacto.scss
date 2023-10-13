@@ -4,7 +4,7 @@
       rgba(255, 255, 255, 0.247),
       rgba(255, 255, 255, 0.247)
     ),
-    url(../../../img/gimnasio.jpg) no-repeat center;
+    url(../../../img/gimnasio.png) no-repeat center;
   background-size: cover;
   width: auto;
   height: auto;
@@ -46,6 +46,7 @@
       }
     }
   }
+  //Tablet contacto
   @include tablet {
     display: flex;
     flex-direction: column;
@@ -60,6 +61,7 @@
       justify-content: center;
     }
   }
+  //Mobile contacto
   @include mobile {
     padding: 20px;
     text-align: center;

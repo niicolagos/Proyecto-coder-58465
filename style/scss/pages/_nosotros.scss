@@ -45,6 +45,7 @@
       }
     }
   }
+  //Portatil nosotros
   @include portatil {
     .portada2 {
       .parrafos {
@@ -72,6 +73,7 @@
       }
     }
   }
+  //Tablet nosotros
   @include tablet {
     .portada2 {
       div h2 {
@@ -88,6 +90,7 @@
       }
     }
   }
+  //Mobile nosotros
   @include mobile {
     .portada2 {
       font-size: 16px;
@@ -123,7 +126,7 @@
         iframe {
           width: 100%;
         }
+      }
     }
   }
-}
 }

@@ -21,17 +21,20 @@ header {
       text-decoration: none;
     }
   }
+  //Portatil header
   @include portatil {
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
+  //Tablet header
   @include tablet {
     header {
       font-style: italic;
       display: flex;
     }
   }
+  //Mobile header
   @include mobile {
     header {
       text-align: center;

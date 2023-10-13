@@ -17,6 +17,7 @@
       }
     }
   }
+  //Portatil navbar
   @include portatil {
     #navbarNav ul {
       .nav-item {
@@ -24,11 +25,13 @@
       }
     }
   }
+  //Tablet navbar
   @include tablet {
     .navbar-toggler {
       background: linear-gradient(58deg, rgb(222 220 255) 39%, rgb(0 0 0) 98%);
     }
   }
+  //Mobile navbar
   @include mobile {
     nav {
       text-align: center;
