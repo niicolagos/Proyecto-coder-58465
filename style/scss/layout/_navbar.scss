@@ -1,13 +1,43 @@
 //Navbar
+@import "../utils/mixins";
 
 .navbar {
   background-color: $colorfondo;
-}
-
-.nav-link {
-  color: $colorprimario;
-
-  &:hover {
-    color: $colorgris;
+  #navbarNav ul {
+    @include caja-flex(space-evenly, center, wrap);
+    list-style-type: none;
+    .nav-item {
+      margin: 0 30px;
+      .nav-link {
+        color: $colorprimario;
+        text-decoration: none;
+        &:hover {
+          color: $colorgris;
+        }
+      }
+    }
+  }
+  @include portatil {
+    #navbarNav ul {
+      .nav-item {
+        margin: 0px;
+      }
+    }
+  }
+  @include tablet {
+    .navbar-toggler {
+      background: linear-gradient(58deg, rgb(222 220 255) 39%, rgb(0 0 0) 98%);
+    }
+  }
+  @include mobile {
+    nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .headernav {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
   }
 }

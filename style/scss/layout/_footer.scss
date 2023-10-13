@@ -3,20 +3,54 @@
 footer {
   @include caja-flex(space-between, center, nowrap);
   background-color: $colorfondo;
-  #footerleft {
-    @include caja-flex(space-evenly,center,wrap);
-    color: $colorprimario;
-    width: 100%;
+  @include portatil {
+    background-color: black;
+    display: flex;
+    padding: 35px 2px;
+  }
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include mobile {
     flex-direction: column;
-    .redes {
-      @include caja-flex(space-around,center,wrap);
-      width: 25%;
-      list-style-type: none;
-      text-decoration: none;
-      padding: 0px;
-      .imag {
-        width: 25px;
-      }
+    text-align: center;
+  }
+}
+#footerleft {
+  @include caja-flex(space-evenly, center, wrap);
+  color: $colorprimario;
+  width: 100%;
+  flex-direction: column;
+  .redes {
+    @include caja-flex(space-around, center, wrap);
+    width: 25%;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0px;
+    .imag {
+      width: 25px;
     }
+  }
+  @include portatil {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+  @include tablet {
+    display: flex;
+    .copy {
+      width: 100%;
+    }
+  }
+  @include mobile {
+    body {
+      font-size: 14px;
+    }
+    margin-bottom: 20px;
   }
 }

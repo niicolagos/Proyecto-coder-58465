@@ -2,13 +2,14 @@
 
 @import "../utils/mixins";
 .fondo1 {
-  background: linear-gradient(#ffffff, rgb(89 89 89 / 25%)), url(../../../img/151_hypertrophy-training-division.webp) no-repeat center;
+  background: linear-gradient(#ffffff, rgb(89 89 89 / 25%)),
+    url(../../../img/151_hypertrophy-training-division.webp) no-repeat center;
   background-size: cover;
   width: auto;
   height: auto;
   background-attachment: fixed;
   .portada2 {
-    @include caja-flex(center,stretch,wrap);
+    @include caja-flex(center, stretch, wrap);
     flex-direction: column;
     text-align: center;
     padding: 60px 10px;
@@ -44,4 +45,85 @@
       }
     }
   }
+  @include portatil {
+    .portada2 {
+      .parrafos {
+        width: 100%;
+        align-content: space-around;
+      }
+      .ubicacion {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+        h3 {
+          width: 50%;
+        }
+      }
+      div .datos {
+        display: flex;
+        flex-direction: column;
+        li p {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  @include tablet {
+    .portada2 {
+      div h2 {
+        width: 100%;
+      }
+      .ubicacion h3 {
+        width: 100%;
+      }
+      .parrafos {
+        display: flex;
+        margin-top: 45px;
+        font-size: large;
+        flex-wrap: wrap;
+      }
+    }
+  }
+  @include mobile {
+    .portada2 {
+      font-size: 16px;
+      display: flex;
+      align-items: flex-start;
+      width: 100%;
+      div h2 {
+        width: 100%;
+        font-size: 18px;
+      }
+      .datos li {
+        padding: 3px;
+      }
+      .parrafos {
+        width: 100%;
+        display: flex;
+        align-content: space-between;
+        font-size: unset;
+        margin-bottom: 25px;
+        font-size: 15px;
+        font-weight: 800;
+        height: 64vh;
+        p {
+          margin-bottom: 8px;
+        }
+      }
+      .ubicacion {
+        padding-top: 45px;
+        h3 {
+          font-size: 15px;
+          font-weight: 700;
+        }
+        iframe {
+          width: 100%;
+        }
+    }
+  }
+}
 }

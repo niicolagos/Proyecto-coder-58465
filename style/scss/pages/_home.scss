@@ -35,4 +35,34 @@
       font-size: 16px;
     }
   }
+  @include portatil {
+    .portada {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-content: space-between;
+    }
+  }
+  @include tablet {
+    padding: 171px;
+  }
+  @include mobile {
+    padding: 160px;
+    .portada {
+      h2 {
+        font-size: 35px;
+        font-weight: 800;
+        padding-top: 85px;
+      }
+      h3 {
+        font-size: 30px;
+        text-align: center;
+      }
+      .boton {
+        display: block;
+        margin: 10px auto;
+      }
+    }
+  }
 }

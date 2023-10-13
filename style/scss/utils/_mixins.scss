@@ -1,6 +1,21 @@
-@mixin caja-flex($ejeprincipal, $ejecruzado, $wrap){
-    display: flex;
-    justify-content: $ejeprincipal;
-    align-items: $ejecruzado;
-    flex-wrap: $wrap;
+@mixin caja-flex($ejeprincipal, $ejecruzado, $wrap) {
+  display: flex;
+  justify-content: $ejeprincipal;
+  align-items: $ejecruzado;
+  flex-wrap: $wrap;
+}
+@mixin portatil {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin mobile {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
 }

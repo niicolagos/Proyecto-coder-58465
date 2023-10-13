@@ -32,30 +32,68 @@ header .headertitulo a {
   color: white;
   text-decoration: none;
 }
-header nav ul {
+@media screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header header {
+    font-style: italic;
+    display: flex;
+  }
+}
+@media screen and (max-width: 320px) {
+  header header {
+    text-align: center;
+  }
+  header header .headertitulo h1 {
+    font-size: 20px;
+  }
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar #navbarNav ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   list-style-type: none;
 }
-header nav ul li {
+.navbar #navbarNav ul .nav-item {
   margin: 0 30px;
 }
-header nav ul li a {
+.navbar #navbarNav ul .nav-item .nav-link {
   color: white;
   text-decoration: none;
 }
-
-.navbar {
-  background-color: black;
-}
-
-.nav-link {
-  color: white;
-}
-.nav-link:hover {
+.navbar #navbarNav ul .nav-item .nav-link:hover {
   color: grey;
+}
+@media screen and (max-width: 1024px) {
+  .navbar #navbarNav ul .nav-item {
+    margin: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar .navbar-toggler {
+    background: linear-gradient(58deg, rgb(222, 220, 255) 39%, rgb(0, 0, 0) 98%);
+  }
+}
+@media screen and (max-width: 320px) {
+  .navbar nav {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .navbar .headernav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
 }
 
 footer {
@@ -65,7 +103,27 @@ footer {
   flex-wrap: nowrap;
   background-color: black;
 }
-footer #footerleft {
+@media screen and (max-width: 1024px) {
+  footer {
+    background-color: black;
+    display: flex;
+    padding: 35px 2px;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#footerleft {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -74,7 +132,7 @@ footer #footerleft {
   width: 100%;
   flex-direction: column;
 }
-footer #footerleft .redes {
+#footerleft .redes {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -84,8 +142,35 @@ footer #footerleft .redes {
   text-decoration: none;
   padding: 0px;
 }
-footer #footerleft .redes .imag {
+#footerleft .redes .imag {
   width: 25px;
+}
+@media screen and (max-width: 1024px) {
+  #footerleft {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #footerleft h4 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footerleft {
+    display: flex;
+  }
+  #footerleft .copy {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #footerleft {
+    margin-bottom: 20px;
+  }
+  #footerleft body {
+    font-size: 14px;
+  }
 }
 
 .fondo {
@@ -121,6 +206,38 @@ footer #footerleft .redes .imag {
   background-color: black;
   padding: 8px;
   font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  .fondo .portada {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-content: space-between;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fondo {
+    padding: 171px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fondo {
+    padding: 160px;
+  }
+  .fondo .portada h2 {
+    font-size: 35px;
+    font-weight: 800;
+    padding-top: 85px;
+  }
+  .fondo .portada h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .fondo .portada .boton {
+    display: block;
+    margin: 10px auto;
+  }
 }
 
 .fondo1 {
@@ -168,6 +285,83 @@ footer #footerleft .redes .imag {
   width: 35%;
   flex-direction: row;
   font-family: serif;
+}
+@media screen and (max-width: 1024px) {
+  .fondo1 .portada2 .parrafos {
+    width: 100%;
+    align-content: space-around;
+  }
+  .fondo1 .portada2 .ubicacion {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+  .fondo1 .portada2 .ubicacion h3 {
+    width: 50%;
+  }
+  .fondo1 .portada2 div .datos {
+    display: flex;
+    flex-direction: column;
+  }
+  .fondo1 .portada2 div .datos li p {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fondo1 .portada2 div h2 {
+    width: 100%;
+  }
+  .fondo1 .portada2 .ubicacion h3 {
+    width: 100%;
+  }
+  .fondo1 .portada2 .parrafos {
+    display: flex;
+    margin-top: 45px;
+    font-size: large;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fondo1 .portada2 {
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .fondo1 .portada2 div h2 {
+    width: 100%;
+    font-size: 18px;
+  }
+  .fondo1 .portada2 .datos li {
+    padding: 3px;
+  }
+  .fondo1 .portada2 .parrafos {
+    width: 100%;
+    display: flex;
+    align-content: space-between;
+    font-size: unset;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-weight: 800;
+    height: 64vh;
+  }
+  .fondo1 .portada2 .parrafos p {
+    margin-bottom: 8px;
+  }
+  .fondo1 .portada2 .ubicacion {
+    padding-top: 45px;
+  }
+  .fondo1 .portada2 .ubicacion h3 {
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .fondo1 .portada2 .ubicacion iframe {
+    width: 100%;
+  }
 }
 
 .fondo2 {
@@ -250,6 +444,52 @@ footer #footerleft .redes .imag {
   top: -10px;
   opacity: 0.1;
 }
+@media screen and (max-width: 1024px) {
+  .fondo2 {
+    padding-bottom: 10px;
+  }
+  .fondo2 .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .fondo2 {
+    padding: 10px;
+  }
+  .fondo2 .container-faq .title-faq {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fondo2 {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  .fondo2 .container-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    font-size: 16px;
+    padding: 0;
+  }
+  .fondo2 .container-faq .title-faq {
+    font-size: 2.5rem;
+    margin-top: 25px;
+  }
+  .fondo2 .container-faq .item-faq {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 3px;
+  }
+  .fondo2 .container-faq .item-faq .pregunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+}
 
 .fondo3 {
   background: linear-gradient(#ff7575, rgba(255, 255, 255, 0.247)), url(../../../img/training.jpg) no-repeat center;
@@ -262,6 +502,7 @@ footer #footerleft .redes .imag {
   background-attachment: fixed;
 }
 .fondo3 .gridcontainer {
+  overflow: hidden;
   display: grid;
   grid-template-areas: "titulo titulo titulo" "article1  article2  article3" "article4  article5 article6";
   grid-template-columns: 1fr 1fr 1fr;
@@ -327,6 +568,28 @@ footer #footerleft .redes .imag {
   padding-left: 5px;
   padding-right: 5px;
 }
+@media screen and (max-width: 1024px) {
+  .fondo3 .gridcontainer {
+    display: grid;
+    grid-template-areas: "titulo titulo" "article1  article2" "article3 article4" "article5 article6";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 2fr;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .fondo3 .gridcontainer {
+    grid-template-areas: "titulo" "article1" "article2" "article3" "article4" "article5" "article6";
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .fondo3 .gridcontainer .titulo3 {
+    display: flex;
+    font-size: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 
 .fondo4 {
   background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/gimnasio.jpg) no-repeat center;
@@ -367,136 +630,8 @@ footer #footerleft .redes .imag {
 .fondo4 .botoncontainer .boton-limpiar:hover {
   background-color: #003049;
 }
-
-@media screen and (max-width: 1024px) {
-  header {
-    color: white;
-    background-color: black;
-    font-style: italic;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  .nav-item {
-    margin: 0px;
-  }
-  .portada {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: space-between;
-  }
-  .datos {
-    display: flex;
-    flex-direction: column;
-  }
-  .datos p {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 10px;
-  }
-  .fondo1 .portada2 .parrafos {
-    width: 100%;
-    align-content: space-around;
-  }
-  .fondo1 .portada2 .ubicacion {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 30px;
-  }
-  .fondo1 .portada2 .ubicacion h3 {
-    width: 50%;
-  }
-  .fondo2 {
-    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/motivacion-gym.jpg) no-repeat center;
-    background-size: cover;
-    text-align: center;
-    padding-bottom: 10px;
-    background-attachment: fixed;
-  }
-  .fondo2 .container {
-    margin: 100px auto;
-    width: 100%;
-  }
-  footer {
-    background-color: black;
-    display: flex;
-    padding: 35px 2px;
-  }
-  footer #footerleft {
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  footer #footerleft h4 {
-    font-size: 1.2rem;
-  }
-  .fondo3 .gridcontainer {
-    display: grid;
-    grid-template-areas: "titulo titulo" "article1  article2" "article3 article4" "article5 article6";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 2fr;
-    gap: 20px;
-  }
-}
 @media screen and (max-width: 768px) {
-  header {
-    color: white;
-    background-color: black;
-    font-style: italic;
-    display: flex;
-  }
-  footer {
-    background-color: black;
-    display: flex;
-    padding: 35px 2px;
-    justify-content: space-between;
-  }
-  footer .footerleft {
-    color: white;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-  footer .footerleft .copy {
-    width: 100%;
-  }
-  .portada2 div h2 {
-    width: 100%;
-  }
-  .ubicacion h3 {
-    width: 100%;
-  }
-  .parrafos {
-    display: flex;
-    margin-top: 45px;
-    font-size: large;
-    flex-wrap: wrap;
-  }
-  .fondo {
-    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/pesas.jpg) no-repeat center;
-    background-size: cover;
-    padding: 171px;
-  }
-  .fondo2 {
-    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/motivacion-gym.jpg) no-repeat center;
-    background-size: cover;
-    text-align: center;
-    padding: 100px;
-    background-attachment: fixed;
-  }
-  .container-faq .title-faq {
-    font-size: 2rem;
-    margin-bottom: 30px;
-  }
   .fondo4 {
-    background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/gimnasio.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     padding-bottom: 100px;
@@ -510,113 +645,8 @@ footer #footerleft .redes .imag {
     flex-direction: column;
     justify-content: center;
   }
-  .gridcontainer {
-    display: grid;
-    grid-template-areas: "titulo titulo" "article1  article2" "article3 article4" "article5 article6";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 2fr;
-    gap: 20px;
-  }
 }
 @media screen and (max-width: 320px) {
-  body {
-    font-size: 14px;
-  }
-  header {
-    text-align: center;
-  }
-  .headertitulo h1 {
-    font-size: 20px;
-  }
-  .headernav {
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  nav {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .fondo {
-    padding: 160px;
-  }
-  .portada h2 {
-    font-size: 35px;
-    font-weight: 800;
-    padding-top: 85px;
-  }
-  .portada h3 {
-    font-size: 30px;
-    text-align: center;
-  }
-  .portada .boton {
-    display: block;
-    margin: 10px auto;
-  }
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  footer .footerleft {
-    margin-bottom: 20px;
-  }
-  .portada2 {
-    font-size: 16px;
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-  }
-  .portada2 div h2 {
-    width: 100%;
-    font-size: 18px;
-  }
-  .portada2 .datos li {
-    padding: 3px;
-  }
-  .portada2 .parrafos {
-    margin-bottom: 25px;
-    font-size: 15px;
-    font-weight: 800;
-    height: 64vh;
-  }
-  .portada2 .parrafos p {
-    margin-bottom: 8px;
-  }
-  .portada2 .ubicacion h3 {
-    font-size: 15px;
-    font-weight: 700;
-  }
-  .portada2 .ubicacion iframe {
-    width: 100%;
-  }
-  .fondo1 .portada2 .parrafos {
-    width: 100%;
-    display: flex;
-    align-content: space-between;
-    font-size: unset;
-  }
-  .fondo1 .portada2 .ubicacion {
-    padding-top: 45px;
-  }
-  /*Ejercicios */
-  .fondo3 {
-    background: linear-gradient(#ff7575, rgba(255, 255, 255, 0.247)), url(../../../img/training.jpg) no-repeat center;
-    padding-bottom: 200px;
-    padding-top: 200px;
-    background-attachment: fixed;
-  }
-  .fondo3 .gridcontainer {
-    grid-template-areas: "titulo" "article1" "article2" "article3" "article4" "article5" "article6";
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  .fondo3 .gridcontainer .titulo3 {
-    display: flex;
-    font-size: 30px;
-    flex-direction: column;
-    justify-content: center;
-  }
-  /* Contacto */
   .fondo4 {
     padding: 20px;
     text-align: center;
@@ -642,39 +672,6 @@ footer #footerleft .redes .imag {
     padding: 10px;
     border: 1px solid #ccc;
     margin-bottom: 10px;
-  }
-  /* Faq */
-  .fondo2 {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-  }
-  .container-faq {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 45px;
-    font-size: 16px;
-    padding: 0;
-  }
-  .container-faq .title-faq {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    margin-top: 25px;
-  }
-  .container-faq .item-faq {
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    padding: 3px;
-  }
-  .container-faq .item-faq .pregunta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-  }
-  .container-faq .item-faq .respuesta {
-    display: none;
   }
 }
 
