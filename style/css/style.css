@@ -1,5 +1,5 @@
 * {
-  margin: 10;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -61,7 +61,7 @@ header .headertitulo a {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   list-style-type: none;
 }
 .navbar #navbarNav ul .nav-item {
@@ -75,13 +75,11 @@ header .headertitulo a {
   color: grey;
 }
 @media screen and (max-width: 1024px) {
-  .navbar #navbarNav ul .nav-item {
-    margin: 0px;
-  }
-}
-@media screen and (max-width: 768px) {
   .navbar .navbar-toggler {
     background: linear-gradient(58deg, rgb(222, 220, 255) 39%, rgb(0, 0, 0) 98%);
+  }
+  .navbar #navbarNav ul .nav-item {
+    margin: 0px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -114,10 +112,6 @@ footer {
   footer {
     display: flex;
     justify-content: space-between;
-  }
-}
-@media screen and (max-width: 320px) {
-  footer {
     flex-direction: column;
     text-align: center;
   }
@@ -159,14 +153,10 @@ footer {
 @media screen and (max-width: 768px) {
   #footerleft {
     display: flex;
+    margin-bottom: 20px;
   }
   #footerleft .copy {
     width: 100%;
-  }
-}
-@media screen and (max-width: 320px) {
-  #footerleft {
-    margin-bottom: 20px;
   }
   #footerleft body {
     font-size: 14px;
@@ -174,7 +164,7 @@ footer {
 }
 
 .fondo {
-  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/pesas.jpg) no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/pesas.avif) no-repeat center;
   background-size: cover;
   width: auto;
   height: auto;
@@ -238,6 +228,9 @@ footer {
 @media screen and (max-width: 768px) {
   .fondo {
     padding: 171px;
+  }
+  .fondo .portada h2 {
+    font-size: 55px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -314,6 +307,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+    max-width: 100%;
   }
   .fondo1 .portada2 .ubicacion h3 {
     width: 50%;
@@ -384,7 +378,7 @@ footer {
 }
 
 .fondo2 {
-  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/motivacion-gym.jpg) no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/motivacion-gym.avif) no-repeat center;
   background-size: cover;
   text-align: center;
   width: auto;
@@ -511,7 +505,7 @@ footer {
 }
 
 .fondo3 {
-  background: linear-gradient(#ff7575, rgba(255, 255, 255, 0.247)), url(../../../img/training.jpg) no-repeat center;
+  background: linear-gradient(#ff7575, rgba(255, 255, 255, 0.247)), url(../../../img/training.avif) no-repeat center;
   background-size: cover;
   text-align: center;
   width: auto;
@@ -611,7 +605,7 @@ footer {
 }
 
 .fondo4 {
-  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/gimnasio.png) no-repeat center;
+  background: linear-gradient(rgba(255, 255, 255, 0.247), rgba(255, 255, 255, 0.247)), url(../../../img/gimnasio.avif) no-repeat center;
   background-size: cover;
   width: auto;
   height: auto;
@@ -624,11 +618,12 @@ footer {
 }
 .fondo4 .contactodatos {
   display: grid;
+  justify-content: center;
   grid-template-areas: "gridcontacto1" "gridcontacto2" "gridcontacto3" "gridcontacto4" "gridcontacto5" "gridcontacto6";
   grid-template-columns: 1fr;
-  font-size: 30px;
-  gap: 20px;
   font-size: 24px;
+  gap: 20px;
+  font-weight: 600;
 }
 .fondo4 .botoncontainer {
   display: flex;
@@ -653,6 +648,7 @@ footer {
   .fondo4 {
     display: flex;
     flex-direction: column;
+    padding: 0;
     padding-bottom: 100px;
     align-items: center;
   }
@@ -663,6 +659,9 @@ footer {
     width: 260px;
     flex-direction: column;
     justify-content: center;
+  }
+  .fondo4 .contactodatos {
+    font-size: 17px;
   }
 }
 @media screen and (max-width: 320px) {

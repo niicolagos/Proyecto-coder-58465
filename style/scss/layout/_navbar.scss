@@ -4,7 +4,7 @@
 .navbar {
   background-color: $colorfondo;
   #navbarNav ul {
-    @include caja-flex(space-evenly, center, wrap);
+    @include caja-flex(space-evenly, center, nowrap);
     list-style-type: none;
     .nav-item {
       margin: 0 30px;
@@ -19,16 +19,13 @@
   }
   //Portatil navbar
   @include portatil {
+    .navbar-toggler {
+      background: linear-gradient(58deg, rgb(222 220 255) 39%, rgb(0 0 0) 98%);
+    }
     #navbarNav ul {
       .nav-item {
         margin: 0px;
       }
-    }
-  }
-  //Tablet navbar
-  @include tablet {
-    .navbar-toggler {
-      background: linear-gradient(58deg, rgb(222 220 255) 39%, rgb(0 0 0) 98%);
     }
   }
   //Mobile navbar

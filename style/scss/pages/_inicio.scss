@@ -6,7 +6,7 @@
       rgba(255, 255, 255, 0.247),
       rgba(255, 255, 255, 0.247)
     ),
-    url(../../../img/pesas.jpg) no-repeat center;
+    url(../../../img/pesas.avif) no-repeat center;
   background-size: cover;
   width: auto;
   height: auto;
@@ -67,6 +67,11 @@
   //Tablet inicio
   @include tablet {
     padding: 171px;
+    .portada {
+      h2{
+        font-size: 55px;
+      }
+    }
   }
   //Mobile inicio
   @include mobile {
