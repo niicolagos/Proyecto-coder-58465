@@ -98,25 +98,25 @@
       gap: 20px;
     }
   }
-  //Mobile ejercicios
-  @include mobile {
-    .gridcontainer {
-      grid-template-areas:
-        "titulo"
-        "article1"
-        "article2"
-        "article3"
-        "article4"
-        "article5"
-        "article6";
-      display: grid;
-      grid-template-columns: 1fr;
-      .titulo3 {
-        display: flex;
-        font-size: 30px;
-        flex-direction: column;
-        justify-content: center;
+  //Tablet ejercicios
+  @include tablet{
+      .gridcontainer {
+        grid-template-areas:
+          "titulo"
+          "article1"
+          "article2"
+          "article3"
+          "article4"
+          "article5"
+          "article6";
+        display: grid;
+        grid-template-columns: 1fr;
+        .titulo3 {
+          display: flex;
+          font-size: 30px;
+          flex-direction: column;
+          justify-content: center;
+        }
       }
     }
-  }
 }

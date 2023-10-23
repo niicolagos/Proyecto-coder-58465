@@ -230,7 +230,7 @@ footer {
     padding: 171px;
   }
   .fondo .portada h2 {
-    font-size: 55px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -590,7 +590,7 @@ footer {
     gap: 20px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .fondo3 .gridcontainer {
     grid-template-areas: "titulo" "article1" "article2" "article3" "article4" "article5" "article6";
     display: grid;
@@ -662,6 +662,7 @@ footer {
   }
   .fondo4 .contactodatos {
     font-size: 14px;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 320px) {
