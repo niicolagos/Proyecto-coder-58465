@@ -617,6 +617,9 @@ footer {
   font-size: 4rem;
 }
 .fondo4 .contactodatos {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(rgba(63, 63, 63, 0.2705882353), rgba(89, 89, 89, 0.25));
+  border-radius: 15px;
   display: grid;
   justify-content: center;
   grid-template-areas: "gridcontacto1" "gridcontacto2" "gridcontacto3" "gridcontacto4" "gridcontacto5" "gridcontacto6";
